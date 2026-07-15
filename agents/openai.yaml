@@ -1,4 +1,4 @@
 interface:
-  display_name: "ChatGPT App Skin"
-  short_description: "Create refined visual systems for ChatGPT Apps"
-  default_prompt: "Use $chatgpt-app-skin-skill to design and implement a polished visual direction for this ChatGPT App."
+  display_name: "Codex Desktop Skinning"
+  short_description: "Create, validate, and package Codex Desktop skins"
+  default_prompt: "Use $codex-desktop-skinning to create and package a local Codex Desktop skin."

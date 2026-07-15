@@ -1,28 +1,18 @@
-# ChatGPT App Skin Skill
+# Codex Desktop Skinning
 
-A reusable Codex skill for generating polished skins, themes, layouts, and visual systems for ChatGPT Apps.
+可复用的 Codex/ChatGPT Desktop 本地皮肤 Skill。它覆盖官方主题 token 分析、CDP 注入、背景与透明前景分层、页面状态切换、macOS/Windows 桌面入口、双平台安装包，以及真实 WebView 验证。
 
-It guides a complete UI restyle: choosing a direction that fits the product, defining semantic tokens, improving hierarchy and responsive behavior, and validating interaction states without changing the app's intended behavior.
-
-## Included
-
-- `SKILL.md`: concise, executable workflow for visual design and implementation.
-- `references/style-playbooks.md`: four product-oriented art directions for focused, operational, editorial, and collaborative apps.
-- `agents/openai.yaml`: display metadata and a ready-to-use prompt for supported Skill environments.
-
-## Install
+安装到本机 Skill 目录：
 
 ```bash
 git clone https://github.com/iunclear/chatgpt-app-skin-skill.git \
-  "${CODEX_HOME:-$HOME/.codex}/skills/chatgpt-app-skin-skill"
+  "${CODEX_HOME:-$HOME/.codex}/skills/codex-desktop-skinning"
 ```
 
-Then invoke it in a task:
+调用：
 
 ```text
-Use $chatgpt-app-skin-skill to design and implement a polished visual direction for this ChatGPT App.
+Use $codex-desktop-skinning to create and package a local Codex Desktop skin.
 ```
 
-## License
-
-Apache-2.0. See [LICENSE](LICENSE).
+发布 ZIP 后使用 `scripts/validate-skin-package.sh <archive.zip>` 检查 macOS/Windows 安装入口、主题资源和不应分发的运行时文件。
