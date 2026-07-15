@@ -1,0 +1,4 @@
+interface:
+  display_name: "ChatGPT App Skin"
+  short_description: "Create refined visual systems for ChatGPT Apps"
+  default_prompt: "Use $chatgpt-app-skin-skill to design and implement a polished visual direction for this ChatGPT App."
