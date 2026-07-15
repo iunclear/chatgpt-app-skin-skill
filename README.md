@@ -16,3 +16,7 @@ Use $codex-desktop-skinning to create and package a local Codex Desktop skin.
 ```
 
 发布 ZIP 后使用 `scripts/validate-skin-package.sh <archive.zip>` 检查 macOS/Windows 安装入口、主题资源和不应分发的运行时文件。
+
+## 示例安装包
+
+`examples/dahua-xiyou/` 包含已校验的 `Codex-Dahua-Xiyou-Skin-1.0.0.zip` 及其 SHA-256 文件。解压后：macOS 双击 `Install-DahuaXiyou.command`，Windows 双击 `Install-DahuaXiyou.cmd`。
