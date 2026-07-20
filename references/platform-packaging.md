@@ -53,3 +53,5 @@ Codex-<skin>-Skin-x.y.z/
 ```
 
 Exclude runtime logs, test profiles, release folders, and chroma-key source files. Archive the top-level directory and publish a SHA-256 sidecar.
+
+Build archives without Finder metadata such as `__MACOSX`, `.DS_Store`, or AppleDouble `._*` files. Run `scripts/validate-skin-package.sh <archive.zip>` before publishing; the validator derives the skin name from the matching `Install-<skin>.*` and `Uninstall-<skin>.*` entry points, so it can validate any package that follows this layout.
